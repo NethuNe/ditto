@@ -1,7 +1,12 @@
-FROM alpine:3.18
+FROM golang:1.22
 
 WORKDIR /app
-COPY ditto ./
 
-CMD ["./ditto"]
+COPY . .
+
+RUN go mod download
+
+RUN go build -o /ditto
+
+CMD [ "/ditto" ]
 
