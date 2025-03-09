@@ -27,6 +27,14 @@ func main() {
 	log.Info("Starting server on port ", PORT)
 
 	http.HandleFunc("/healthcheck", handlers.Healthcheck)
+	// get config
+
+	// set config
+
+	// wildcard fallthru
+	http.HandleFunc("/", handlers.Simulate)
 
 	http.ListenAndServe(fmt.Sprintf(":%d", PORT), nil)
 }
+
+// flag for file path of input file

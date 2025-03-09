@@ -21,6 +21,7 @@ none.
 - HTTP config driven request handling
 - byte vomit to enable testing large and/or unexpected responses / mangled packets
 - on-the-fly config upload / changing & local config storage
+- kubernetes support
 - library options such as parameterization, latency injection, request dropping, etc..
 - HTTPS (will only work if the certificate wherever it's deployed is the same as the original requester... or you spoof it or allow insecure connections)
 - UDP
