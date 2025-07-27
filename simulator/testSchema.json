@@ -1,0 +1,12 @@
+{
+    "endpoints": [
+        {
+            "path": "/foo",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "body": "anything that you can type coerce into a string",
+            "status": 200
+        }
+    ]
+}
