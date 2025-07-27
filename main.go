@@ -31,6 +31,9 @@ func main() {
 
 	// set config
 
+	// Library config handlers.
+	http.HandleFunc("/generateBytes", handlers.GenerateBytes)
+
 	// wildcard fallthru
 	http.HandleFunc("/", handlers.Simulate)
 
