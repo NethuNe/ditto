@@ -13,7 +13,7 @@ func TestParseConfig(t *testing.T) {
 			testName:             "Valid Schema Single Endpoint",
 			numExpectedEndpoints: 1,
 			wantErr:              false,
-			filePath:             "simulator/testSchema.json",
+			filePath:             "testSchema.json",
 		},
 		{
 			testName:             "Invalid Filepath",
