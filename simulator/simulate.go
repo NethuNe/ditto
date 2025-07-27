@@ -10,7 +10,7 @@ import (
 const MIN_FUZZY_STRENGTH_PERCENT float64 = 0.6
 
 var config *SimulatorConfig
-var tempPath string = "testSchema.json" // todo: configurable
+var tempPath string = "./simulator/testSchema.json" // todo: configurable
 
 func init() {
 	var err error
